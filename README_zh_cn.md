@@ -8,15 +8,15 @@ FluentDotFirefox 是火狐浏览器电脑版的自定义用户界面，致力于
 
 - 主界面:
 
-<img title="" src="majority.png" alt="majority.png" data-align="inline" width="443">
+<img title="" src="docs/majority.png" alt="majority.png" data-align="inline" width="443">
 
 - 弹出菜单:
 
-<img title="" src="popup.png" alt="popup.png" width="254" data-align="inline">
+<img title="" src="docs/popup.png" alt="popup.png" width="254" data-align="inline">
 
 - 列表菜单:
 
-<img title="" src="panel.png" alt="panel.png" width="264" data-align="left">
+<img title="" src="docs/panel.png" alt="panel.png" width="264" data-align="left">
 
 FluentDotFirefox 基于火狐浏览器的用户界面功能。得益于其强大的拓展能力，你还可以通过这个功能进行更多的创造，实现现在的火狐浏览器所不具备的功能，使你的火狐浏览器更加美观高效、功能丰富。
 
@@ -24,7 +24,7 @@ FluentDotFirefox 基于火狐浏览器的用户界面功能。得益于其强大
 
 您可以通过微信来捐赠我:
 
-<img title="" src="qrcode.png" alt="qrcode.png" width="132" data-align="inline">
+<img title="" src="docs/qrcode.png" alt="qrcode.png" width="132" data-align="inline">
 
 ## 安装
 
@@ -38,7 +38,7 @@ FluentDotFirefox 基于火狐浏览器的用户界面功能。得益于其强大
 
 5. 打开这个配置文件的根目录。
    
-   <img src="profiles.png" title="" alt="profiles.png" data-align="inline">
+   <img src="docs/profiles.png" title="" alt="profiles.png" data-align="inline">
 
 6. 将 FluentDotFirefox 中的chrome文件夹复制到该目录。
 

@@ -8,15 +8,15 @@ Example:
 
 - Majority Chrome:
 
-<img title="" src="majority.png" alt="majority.png" data-align="inline" width="443">
+<img title="" src="docs/majority.png" alt="majority.png" data-align="inline" width="443">
 
 - Popup Menu:
 
-<img title="" src="popup.png" alt="popup.png" width="254" data-align="inline">
+<img title="" src="docs/popup.png" alt="popup.png" width="254" data-align="inline">
 
 - Panel:
 
-<img title="" src="panel.png" alt="panel.png" width="264" data-align="left">
+<img title="" src="docs/panel.png" alt="panel.png" width="264" data-align="left">
 
 FluentDotFirefox bases on firefox's userChrome function.
 
@@ -26,7 +26,7 @@ Building FluentDotFirefox takes a lot of time. It is my pleasure that you donate
 
 You can donate by Wechat:
 
-<img title="" src="qrcode.png" alt="qrcode.png" width="132" data-align="inline">
+<img title="" src="docs/qrcode.png" alt="qrcode.png" width="132" data-align="inline">
 
 ## Install
 
@@ -40,7 +40,7 @@ You can donate by Wechat:
 
 5. Switch to the profile's root location.
    
-   <img src="profiles.png" title="" alt="profiles.png" data-align="inline">
+   <img src="docs/profiles.png" title="" alt="profiles.png" data-align="inline">
 
 6. Copy 'chrome' folder in FluentDotFirefox to the location.
 
