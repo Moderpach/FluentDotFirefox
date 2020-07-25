@@ -1,5 +1,5 @@
 :root:not([style]),
-:root[style*="--lwt-accent-color:rgb(227, 228, 230);"] {
+:root {
     /**
     * Firefox includs these origen variable value, which
     * could change the Firefox userChrome.
