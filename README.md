@@ -46,7 +46,9 @@ You can donate by Wechat:
 
 7. Install fonts in 'fonts' folder of FluentDotFirefox.
 
-8. Restart Firefox.
+8. Change your Firefox theme to "Light".
+
+9. Restart Firefox.
 
 ## Get a better experience on firefox
 
