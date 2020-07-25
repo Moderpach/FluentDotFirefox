@@ -1,0 +1,80 @@
+
+
+/* Adjust the space before or behind the tabs group. */
+:-moz-any(.titlebar-placeholder, .titlebar-spacer) {
+    /** Without boader which could be showed out of 
+    fullscreen.*/
+    border: 0 !important;
+    /** Clear the width. */
+    width: 0 !important;
+}
+
+.tabbrowser-tab[first-visible-tab] {
+    /** Keep a space before the tabs group. */
+    margin-left: 12px !important;
+}
+/** !Here It is because of showing shadow conrrectly 
+to use margin of .tabbrowser-tab but not width of 
+.titlebar-placeholder and .titlebar-spacer.
+*/
+
+/* Adjust the style of tab. */
+.tabbrowser-tab {
+    /** Keep the background of tab unselected 
+    follow the color of --lwt-accent-color.
+    Here background is 0 because the css is implement
+    in origen firefox.
+    */
+    background: 0 !important;
+    /* !You couldn't set the max-width of a tab here
+    or the tab could not be closed correctly.
+    */
+    font-size: 12.5px !important;
+    font-weight: 400;
+    /* transition */
+    transition:
+    font-size .15s linear !important;
+}
+
+
+.tabbrowser-tab[fadein]:not([pinned]):not([style*="max-width"]) {
+    /* Change the max-width of a tab */
+	max-width: 200px !important;
+}
+
+.tabbrowser-tab[visuallyselected] {
+    /** Keep the background of tab selected follow 
+    the color of --toolbar-bgcolor
+    */
+    background: var(--toolbar-bgcolor) !important;
+    /** The shadow of selected tab. */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
+    font-size: 13px !important;
+    font-weight: 600;
+}
+
+/* The content of a tab */
+.tab-content {
+    overflow: hidden !important;
+    font-family: var(--chrome-font-family);
+}
+
+.tab-label-container {
+	margin-top: 2px !important;
+}
+
+.tabbrowser-tab::before,
+.tabbrowser-tab::after,
+.tab-line {
+	display: none !important;
+}
+
+.tab-background {
+	border: 0 !important;
+    visibility: visible !important;
+    transition: background-color .16s linear !important;
+}
+
+#tabbrowser-tabs[overflow] .tabbrowser-tab[pinned] + .tabbrowser-tab:not([pinned]) .tab-content::before {
+    background-color: var(--hover-shadow) !important;
+}

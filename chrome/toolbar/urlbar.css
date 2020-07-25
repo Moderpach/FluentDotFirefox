@@ -1,0 +1,113 @@
+/* Change the style of urlbar */
+/** Nomal */
+#urlbar,
+#searchbar {
+    font-size: 14px !important;
+    font-family: var(--chrome-font-family);
+    background-color: var(--lwt-urlbar-bgcolor) !important;
+    overflow: hidden !important;
+	border-radius: 8px !important;
+    min-height: 28px !important;
+    box-shadow: 0 0 4px rgba(0,0,0,.06) !important;
+}
+
+#urlbar-background {
+    border: 0 !important;
+    border-radius: 8px !important;
+}
+
+/** !border-radius in #urlbar and #urlbar-background
+should be the same.
+*/
+
+/* Hover */
+#urlbar:hover,
+#searchbar:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,.12);
+}
+
+/* Active */
+#urlbar:active,
+#searchbar:active {
+    box-shadow: 0 0 5px rgba(0,0,0,.12);
+}
+
+/* Focusd */
+#urlbar[focusd],
+#searchbar[focusd] {
+    box-shadow: 0 0 8px rgba(0,0,0,.18);
+    font-size: 14px;
+}
+
+/* Open */
+#urlbar[open],
+#searchbar[open] {
+    box-shadow: 0 0 8px rgba(0,0,0,.18);
+    font-size: 14px;
+}
+
+/* border-radius of button on urlbar */
+.urlbar-icon, 
+#page-action-buttons > toolbarbutton,
+.searchbar-search-button,
+#identity-box,
+#identity-icon,
+#star-button-box {
+    border-radius: 8px !important;
+    background: 0 !important;
+    transition: background-color .2s linear !important;
+}
+
+#userContext-icons::before {
+	border-radius: 8px !important;
+} 
+
+.urlbar-icon:hover, 
+#page-action-buttons > toolbarbutton:hover,
+.searchbar-search-button:hover,
+#identity-box:hover,
+#identity-icon:hover,
+#star-button-box:hover {
+    background: var(--hover-shadow) !important;
+}
+
+/* Adjust the urlbarView */
+.urlbarView {
+    padding-bottom: 8px !important;
+}
+/** Adjust the row height by height and padding. */
+.urlbarView-row {
+    margin: 4px 4px !important;
+	padding: 0 !important;
+    border-radius: 0 !important;
+    height: 32px !important;
+}
+.urlbarView-row-inner {
+    margin: 0 4px !important;
+	padding: 8px 8px !important;
+    width: auto !important;
+}
+
+/* Make title, url, separator in the center
+of the row, then set up their font-size.
+*/
+.urlbarView-title {
+    font-size: 13.5px !important;
+    color: rgb(37, 37, 37);
+    margin: auto 0 !important;
+}
+
+
+.urlbarView-url {
+    font-size: 12px !important;
+    margin: auto 0 !important;
+}
+
+.urlbarView-title-separator {
+    margin: auto 0 !important;
+}
+
+.urlbarView-action {
+    font-size: 13.5px !important;
+    margin: auto 0 !important;
+}

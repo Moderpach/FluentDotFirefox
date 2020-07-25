@@ -1,0 +1,47 @@
+/* Change navbar style */
+#nav-bar {
+	/* Set an shadow from the navbar to tabsbar */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.06)  !important;
+    /* Shorter navbar */
+    max-height: 36px !important;
+    /* Here should be visible if nav-bar's content
+    showing out of the container.
+    */
+    overflow: visible !important;
+
+    padding-left: 2px !important;
+}
+
+/* Change return button to normal style */
+:root:not([uidensity="compact"]) #back-button > .toolbarbutton-icon {
+	background-color: unset !important;
+    border: unset !important;
+    box-shadow: none !important;
+    width: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
+    height: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
+    border-radius: 8px !important;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+    padding: 6px !important;
+}
+
+:root:not([uidensity="compact"]) #back-button:hover:not([disabled]) > .toolbarbutton-icon {
+	background-color: var(--hover-shadow) !important;
+}
+
+:root:not([uidensity="compact"]) #back-button:active:not([disabled]) > .toolbarbutton-icon {
+    background-color: var(--action-shadow) !important;
+}
+
+#navigator-toolbox .toolbarbutton-1 > .toolbarbutton-icon {
+    border-radius: 8px !important;
+    transition: background-color .12s linear !important;
+}
+
+#navigator-toolbox .toolbarbutton-1:hover > .toolbarbutton-icon {
+    background-color: var(--hover-shadow) !important;
+}
+
+#navigator-toolbox .toolbarbutton-1:active > .toolbarbutton-icon {
+    background-color: var(--action-shadow) !important;
+}

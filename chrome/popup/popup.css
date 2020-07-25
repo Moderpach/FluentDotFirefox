@@ -1,0 +1,237 @@
+/* Popup has more than one sort. 
+They are all popup menu but they are 
+independent.
+*/
+
+/* Meunpopup */
+menupopup,
+menupopup menuitem,
+menupopup menu,
+menupopup > menuseparator {
+    /* To set custom style -moz-appearance must be none. */
+    -moz-appearance: none !important;
+    /* Set Font */
+	font-family: var(--chrome-font-family) !important;
+    font-size: 12.5px;
+}
+
+menupopup {
+    /* Margin should match to padding.
+    Padding's value is decided by box-shadow of
+    .popup-internal-box, .menupopup-arrowscrollbox
+    */
+	padding: 12px 12px 12px !important;
+    margin: -12px -12px 0 !important;
+    /* -moz-window-shadow should be none when creating a
+    custom shadow.
+    */
+    -moz-window-shadow: none !important;
+    /* Clear origen style. */
+    background: 0 !important;
+    border: 0 !important;
+}
+
+/* .popup-internal-box, .menupopup-arrowscrollbox is the class
+actually show menuitem.
+Custom style of the popupmenu should be added to here.
+*/
+.popup-internal-box,
+.menupopup-arrowscrollbox {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.20) !important;
+    background: var(--popup-bgcolor) !important;
+    padding: 8px 0 8px 0 !important;
+    border-radius: 8px !important;
+}
+
+/* The menuseparator of the menuitem.
+It is a rectangle so you should use boader to achieve
+it. Don't using a 1px height menuseparator with a 
+background, which could cause the display height different.
+*/
+menupopup > menuseparator {
+	margin: 2px 8px 2px 8px !important;
+	padding: 0 !important;
+	height: 1px !important;
+	background: 0 !important;
+	opacity: .24 !important;
+    border-bottom: 0 !important;
+    border-color: var(--popup-color) !important;
+}
+
+/* Menuitem */
+/* Nomal */
+menupopup > menu,
+menupopup menuitem {
+    margin: 0 !important;
+	height: 30px !important;
+	padding: 0 15px !important;
+	border: 0 !important;
+	background: 0 !important;
+	color: var(--popup-color) !important;
+    fill-opacity: initial !important;
+    transition: background-color .1s linear !important;
+    will-change: background-color !important;
+}
+/* Hover */
+menupopup > menu:hover,
+menupopup menuitem:hover {
+    background: var(--hover-shadow) !important;
+}
+/* Active */
+menupopup > menu:active,
+menupopup menuitem:active {
+    background: var(--action-shadow) !important;
+}
+
+/* Make context-navigation .menuitem-iconic
+align from two side.
+The key implement is:
+display: flex !important;
+justify-content: space-around !important;
+*/
+#context-navigation {
+    /* Clear origen style */
+    background: 0 !important;
+
+    display: flex !important;
+    justify-content: space-around !important;
+    border-radius: 4px !important;
+}
+
+#context-navigation > .menuitem-iconic {
+    /* Clear origen style */
+    padding: 0 !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    justify-content: space-around !important;
+}
+
+menupopup menuitem:has(#context-navigation .menuitem-iconic),
+menupopup menu:has(#context-navigation .menuitem-iconic) {
+    display: flex !important;
+    justify-content: space-around !important;
+} 
+/* Adjust the icons */
+.menu-right {
+    scale: 1.1;
+}
+/* -moz-appearanc must be none. */
+.menu-iconic-left {
+	-moz-appearance: none !important;
+}
+
+menuitem[type="checkbox"] > .menu-iconic-left > .menu-iconic-icon,
+menuitem[checked="true"] > .menu-iconic-left > .menu-iconic-icon,
+menuitem[type="radio"] > .menu-iconic-left > .menu-iconic-icon {
+	display: -moz-box !important;
+}
+/* Check box */
+menuitem[type="checkbox"][checked="false"] > .menu-iconic-left > .menu-iconic-icon {
+    list-style-image: url(check_box_outline_blank.svg) !important;
+}
+
+menuitem[type="checkbox"][checked="true"] > .menu-iconic-left > .menu-iconic-icon {
+    list-style-image: url(check_box.svg) !important;
+}
+/* Radio */
+menuitem[type="radio"][checked="false"] > .menu-iconic-left > .menu-iconic-icon {
+    list-style-image: url(radio_button_unchecked.svg) !important;
+}
+
+menuitem[type="radio"][checked="true"] > .menu-iconic-left > .menu-iconic-icon {
+    list-style-image: url(radio_button_checked.svg) !important;
+}
+
+/* panel */
+panel[type="arrow"] {
+    /* To set custom style -moz-appearance must be none. */
+    -moz-appearance: none !important;
+    /* Set Font */
+	font-family: var(--chrome-font-family) !important;
+    /* Margin should match to padding.
+    Padding's value is decided by box-shadow of
+    .popup-internal-box, .menupopup-arrowscrollbox
+    */
+	padding: 3px 4px !important;
+    margin: -3px -32px !important;
+    /* -moz-window-shadow should be none when creating a
+    custom shadow.
+    */
+    -moz-window-shadow: none !important;
+    /* Clear origen style. */
+    background: 0 !important;
+    border: 0 !important;
+}
+/* clear the arrow */
+.panel-arrowbox {
+    display: none !important;
+}
+/* Private style is added here. */
+.panel-arrowcontent {
+	border: 0 !important;
+	border-radius: 8px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.20) !important;
+}
+/* Set panelview color */
+panelview {
+    background: var(--popup-bgcolor) !important;
+    color: var(--popup-color) !important;
+}
+/* Adjust the row height and font */
+/* 
+panelview .toolbarbutton-1,
+.subviewbutton,
+.widget-overflow-list .toolbarbutton-1,
+.panel-banner-item
+*/
+panelview .toolbarbutton-1,
+.subviewbutton,
+.widget-overflow-list .toolbarbutton-1,
+.panel-banner-item {
+    margin: 0 !important;
+    /* height: 30px !important; */
+    max-height: 40px !important;
+    min-height: 30px !important;
+	padding: 0 14px !important;
+	border: 0 !important;
+    background: 0 !important;
+    font-size: 12.5px !important;
+    font-weight: 400 !important;
+    transition: background-color .1s linear !important;
+}
+/* Hover */
+panelview .toolbarbutton-1:hover,
+.subviewbutton:hover,
+.widget-overflow-list .toolbarbutton-1:hover,
+.panel-banner-item:hover {
+    background: var(--hover-shadow) !important;
+}
+/* Active */
+panelview .toolbarbutton-1:active,
+.subviewbutton:active,
+.widget-overflow-list .toolbarbutton-1:active,
+.panel-banner-item:active {
+    background: var(--action-shadow) !important;
+}
+/* Adjust "zoom" and "edit" size, border and font. */
+#appMenu-zoom-controls > .subviewbutton,
+#appMenu-edit-controls > .subviewbutton {
+	font-family: var(--chrome-font-family) !important;
+}
+
+#appMenu-zoom-controls > .subviewbutton-iconic,
+#appMenu-edit-controls > .subviewbutton-iconic {
+    width: 30px !important;
+    min-width: 30px !important;
+    border-radius: 8px !important;
+}
+/* Adjust subviewbutton-back size and border. */
+.subviewbutton-back {
+	width: 30px !important;
+    min-width: 30px !important;
+    border-radius: 8px !important;
+}
+/* Make arrow smaller */
+.PanelUI-subView .subviewbutton-nav::after {
+    scale: 0.6 !important;
+}

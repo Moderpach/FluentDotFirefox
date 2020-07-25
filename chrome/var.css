@@ -1,0 +1,86 @@
+:root:not([style]),
+:root[style*="--lwt-accent-color:rgb(227, 228, 230);"] {
+    /**
+    * Firefox includs these origen variable value, which
+    * could change the Firefox userChrome.
+    */
+
+    /** Accent Color
+    * The background-color of the whole tabsbar
+    * without selectedtabs.
+    */
+	--lwt-accent-color: #E2E6E7 !important;
+	
+    /** Text Color
+    * The color of the text on tabsbar.
+    * without selectedtabs.
+    */
+	--lwt-text-color: #676767 !important;
+    
+    /** Toolbar
+    * Including bookmark toolbar and navbar.
+    */
+
+    /*** ToolBar Background Color
+    */
+	--toolbar-bgcolor: #F5F5F5 !important;
+	
+    /*** Toolbar Text Color
+    */
+	--toolbar-color: #5c5c5c !important;
+	
+    /*** Separator 
+    * Beteew toolbar and website content.
+    */
+	--chrome-content-separator-color: #d7d7d7 !important;
+	
+    /*** Icon Color
+    */
+	--lwt-toolbarbutton-icon-fill: #5c5c5c !important;
+    
+    /*** Icon in Attention Color
+    */
+	--lwt-toolbarbutton-icon-fill-attention: #5D00FF !important;
+    
+    /*** The High Light When You Focus on Button on Navbar and Tabsbar
+    */
+/* 	--lwt-toolbarbutton-hover-background: rgba(0, 0, 0, .06) !important;
+ */    
+    /*** The High Light When You Check a Button on Navbar and Tabsbar
+    */
+/* 	--lwt-toolbarbutton-active-background: rgba(0, 0, 0, .12) !important;
+ */    
+    /*** Urlbar Text Color
+    * Color of the text on urlbar
+    */
+    --lwt-toolbar-field-color: #292929 !important;
+    
+    /** Private key */
+    /**** Urlbar background color */
+    --lwt-urlbar-bgcolor: #FFFFFF !important;
+    
+    /**** Popup background color */
+    --popup-bgcolor: #F5F5F5 !important;
+
+    /**** Popup content color */
+    --popup-color: #1d1d1d !important;
+
+    --hover-shadow: #00000012 !important;
+
+    --action-shadow: #00000024 !important;
+
+}
+
+:root {
+    /** All font in userChrome.
+    */
+    /* Sarasa Gothic */
+    --chrome-font-family: 
+    'Noto Sans', 
+    'Sarasa UI SC',
+    'Sarasa UI TC', 'Sarasa UI HC', 
+    'Sarasa UI J', 'Sarasa UI K', 
+    'Sarasa UI CL',
+    sans-serif;
+}
+/* Semibold */
