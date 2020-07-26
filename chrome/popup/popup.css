@@ -11,7 +11,6 @@ menupopup > menuseparator {
     /* To set custom style -moz-appearance must be none. */
     -moz-appearance: none !important;
     /* Set Font */
-	font-family: var(--chrome-font-family) !important;
     font-size: 12.5px;
 }
 
@@ -20,8 +19,8 @@ menupopup {
     Padding's value is decided by box-shadow of
     .popup-internal-box, .menupopup-arrowscrollbox
     */
-	padding: 12px 12px 12px !important;
-    margin: -12px -12px 0 !important;
+	padding: 6px 10px 12px 10px !important;
+    margin: -6px -10px -12px -10px !important;
     /* -moz-window-shadow should be none when creating a
     custom shadow.
     */
@@ -37,7 +36,7 @@ Custom style of the popupmenu should be added to here.
 */
 .popup-internal-box,
 .menupopup-arrowscrollbox {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.20) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .3) !important;
     background: var(--popup-bgcolor) !important;
     padding: 8px 0 8px 0 !important;
     border-radius: 8px !important;
@@ -52,7 +51,6 @@ menupopup > menuseparator {
 	margin: 2px 8px 2px 8px !important;
 	padding: 0 !important;
 	height: 1px !important;
-	background: 0 !important;
 	opacity: .24 !important;
     border-bottom: 0 !important;
     border-color: var(--popup-color) !important;
@@ -64,12 +62,10 @@ menupopup > menu,
 menupopup menuitem {
     margin: 0 !important;
 	height: 30px !important;
-	padding: 0 15px !important;
-	border: 0 !important;
-	background: 0 !important;
+    padding: 0 15px !important;
+    background: 0 !important;
 	color: var(--popup-color) !important;
-    fill-opacity: initial !important;
-    transition: background-color .1s linear !important;
+    transition: background-color .12s ease-in !important;
     will-change: background-color !important;
 }
 /* Hover */
@@ -95,22 +91,14 @@ justify-content: space-around !important;
 
     display: flex !important;
     justify-content: space-around !important;
-    border-radius: 4px !important;
 }
 
 #context-navigation > .menuitem-iconic {
     /* Clear origen style */
     padding: 0 !important;
     border-radius: 8px !important;
-    display: flex !important;
-    justify-content: space-around !important;
 }
 
-menupopup menuitem:has(#context-navigation .menuitem-iconic),
-menupopup menu:has(#context-navigation .menuitem-iconic) {
-    display: flex !important;
-    justify-content: space-around !important;
-} 
 /* Adjust the icons */
 .menu-right {
     scale: 1.1;
@@ -146,8 +134,6 @@ menuitem[type="radio"][checked="true"] > .menu-iconic-left > .menu-iconic-icon {
 panel[type="arrow"] {
     /* To set custom style -moz-appearance must be none. */
     -moz-appearance: none !important;
-    /* Set Font */
-	font-family: var(--chrome-font-family) !important;
     /* Margin should match to padding.
     Padding's value is decided by box-shadow of
     .popup-internal-box, .menupopup-arrowscrollbox
@@ -189,15 +175,12 @@ panelview .toolbarbutton-1,
 .widget-overflow-list .toolbarbutton-1,
 .panel-banner-item {
     margin: 0 !important;
-    /* height: 30px !important; */
     max-height: 40px !important;
     min-height: 30px !important;
 	padding: 0 14px !important;
 	border: 0 !important;
-    background: 0 !important;
     font-size: 12.5px !important;
-    font-weight: 400 !important;
-    transition: background-color .1s linear !important;
+    transition: background-color .12s ease-in !important;
 }
 /* Hover */
 panelview .toolbarbutton-1:hover,
@@ -214,11 +197,6 @@ panelview .toolbarbutton-1:active,
     background: var(--action-shadow) !important;
 }
 /* Adjust "zoom" and "edit" size, border and font. */
-#appMenu-zoom-controls > .subviewbutton,
-#appMenu-edit-controls > .subviewbutton {
-	font-family: var(--chrome-font-family) !important;
-}
-
 #appMenu-zoom-controls > .subviewbutton-iconic,
 #appMenu-edit-controls > .subviewbutton-iconic {
     width: 30px !important;
@@ -235,3 +213,4 @@ panelview .toolbarbutton-1:active,
 .PanelUI-subView .subviewbutton-nav::after {
     scale: 0.6 !important;
 }
+

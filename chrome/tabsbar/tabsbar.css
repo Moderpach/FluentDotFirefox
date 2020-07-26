@@ -1,7 +1,7 @@
 
 
 /* Adjust the space before or behind the tabs group. */
-:-moz-any(.titlebar-placeholder, .titlebar-spacer) {
+:-moz-any(.titlebar-spacer) {
     /** Without boader which could be showed out of 
     fullscreen.*/
     border: 0 !important;
@@ -9,9 +9,14 @@
     width: 0 !important;
 }
 
+:-moz-any(.titlebar-placeholder, .titlebar-spacer)[type=post-tabs]
+{
+	width: 8px !important;
+}
+
 .tabbrowser-tab[first-visible-tab] {
     /** Keep a space before the tabs group. */
-    margin-left: 12px !important;
+    margin-inline-start: 12px !important;
 }
 /** !Here It is because of showing shadow conrrectly 
 to use margin of .tabbrowser-tab but not width of 
@@ -20,20 +25,13 @@ to use margin of .tabbrowser-tab but not width of
 
 /* Adjust the style of tab. */
 .tabbrowser-tab {
-    /** Keep the background of tab unselected 
-    follow the color of --lwt-accent-color.
-    Here background is 0 because the css is implement
-    in origen firefox.
-    */
-    background: 0 !important;
     /* !You couldn't set the max-width of a tab here
     or the tab could not be closed correctly.
     */
     font-size: 12.5px !important;
-    font-weight: 400;
     /* transition */
     transition:
-    font-size .15s linear !important;
+    font-size .15s ease-in !important;
 }
 
 
@@ -43,24 +41,16 @@ to use margin of .tabbrowser-tab but not width of
 }
 
 .tabbrowser-tab[visuallyselected] {
-    /** Keep the background of tab selected follow 
-    the color of --toolbar-bgcolor
-    */
-    background: var(--toolbar-bgcolor) !important;
     /** The shadow of selected tab. */
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3) !important;
     font-size: 13px !important;
     font-weight: 600;
 }
 
 /* The content of a tab */
-.tab-content {
-    overflow: hidden !important;
-    font-family: var(--chrome-font-family);
-}
 
 .tab-label-container {
-	margin-top: 2px !important;
+	transform: translateY(1px) !important;
 }
 
 .tabbrowser-tab::before,
@@ -70,9 +60,7 @@ to use margin of .tabbrowser-tab but not width of
 }
 
 .tab-background {
-	border: 0 !important;
-    visibility: visible !important;
-    transition: background-color .16s linear !important;
+   transition: background-color .18s ease-in !important;
 }
 
 #tabbrowser-tabs[overflow] .tabbrowser-tab[pinned] + .tabbrowser-tab:not([pinned]) .tab-content::before {

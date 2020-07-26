@@ -65,6 +65,9 @@
     /**** Popup content color */
     --popup-color: #1d1d1d !important;
 
+    /* To gain higher proformence, selectiong shadow use
+    opcity to achieve
+    */
     --hover-shadow: #00000012 !important;
 
     --action-shadow: #00000024 !important;
@@ -84,3 +87,7 @@
     sans-serif;
 }
 /* Semibold */
+
+:-moz-any(*) {
+    font-family: var(--chrome-font-family) !important;
+}

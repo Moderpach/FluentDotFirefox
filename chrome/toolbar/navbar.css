@@ -1,7 +1,7 @@
 /* Change navbar style */
 #nav-bar {
 	/* Set an shadow from the navbar to tabsbar */
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.06)  !important;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1)  !important;
     /* Shorter navbar */
     max-height: 36px !important;
     /* Here should be visible if nav-bar's content
@@ -13,15 +13,18 @@
 }
 
 /* Change return button to normal style */
+:root:not([uidensity="compact"]) #back-button {
+    background: 0 !important;
+}
+
 :root:not([uidensity="compact"]) #back-button > .toolbarbutton-icon {
-	background-color: unset !important;
-    border: unset !important;
+	background: 0 !important;
+    border: 0 !important;
     box-shadow: none !important;
     width: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
     height: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
     border-radius: 8px !important;
-    margin-left: 2px !important;
-    margin-right: 2px !important;
+    margin: 0 2px !important;
     padding: 6px !important;
 }
 
@@ -33,15 +36,22 @@
     background-color: var(--action-shadow) !important;
 }
 
-#navigator-toolbox .toolbarbutton-1 > .toolbarbutton-icon {
+#navigator-toolbox .toolbarbutton-1 > .toolbarbutton-icon,
+.scrollbutton-up > .toolbarbutton-icon,
+.scrollbutton-down > .toolbarbutton-icon {
     border-radius: 8px !important;
-    transition: background-color .12s linear !important;
+    transition: background-color .12s ease-in !important;
 }
 
-#navigator-toolbox .toolbarbutton-1:hover > .toolbarbutton-icon {
+#navigator-toolbox .toolbarbutton-1:hover > .toolbarbutton-icon,
+.scrollbutton-up:not([disabled]):hover > .toolbarbutton-icon,
+.scrollbutton-down:not([disabled]):hover > .toolbarbutton-icon {
     background-color: var(--hover-shadow) !important;
 }
 
-#navigator-toolbox .toolbarbutton-1:active > .toolbarbutton-icon {
+#navigator-toolbox .toolbarbutton-1:active > .toolbarbutton-icon,
+.scrollbutton-up:not([disabled]):active > .toolbarbutton-icon,
+.scrollbutton-down:not([disabled]):active > .toolbarbutton-icon {
     background-color: var(--action-shadow) !important;
 }
+
