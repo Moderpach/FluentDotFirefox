@@ -42,10 +42,6 @@ should be the same.
     transition: background-color .12s ease-in !important;
 }
 
-#userContext-icons::before {
-	border-radius: 8px !important;
-} 
-
 .urlbar-icon:hover, 
 #page-action-buttons > toolbarbutton:hover,
 .searchbar-search-button:hover,
