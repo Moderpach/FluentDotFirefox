@@ -32,7 +32,9 @@ should be the same.
 }
 
 /* border-radius of button on urlbar */
-.urlbar-icon, 
+
+
+.urlbar-icon,
 #page-action-buttons > toolbarbutton,
 .searchbar-search-button,
 #identity-icon,
@@ -55,6 +57,14 @@ should be the same.
 .searchbar-search-button:active,
 #identity-icon:active,
 #star-button-box:active {
+    background: var(--action-shadow) !important;
+}
+
+.urlbar-icon[open], 
+#page-action-buttons > toolbarbutton[open],
+.searchbar-search-button[open],
+#identity-icon[open],
+#star-button-box[open] {
     background: var(--action-shadow) !important;
 }
 

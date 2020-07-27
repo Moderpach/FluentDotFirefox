@@ -65,7 +65,7 @@ menupopup menuitem {
     padding: 0 15px !important;
     background: 0 !important;
 	color: var(--popup-color) !important;
-    transition: background-color .12s ease-in !important;
+    transition: background-color .08s ease-out !important;
     will-change: background-color !important;
 }
 /* Hover */
@@ -97,6 +97,11 @@ justify-content: space-around !important;
     /* Clear origen style */
     padding: 0 !important;
     border-radius: 8px !important;
+    margin: 0 !important;
+}
+
+#context-navigation > .menuitem-iconic .menu-iconic-left {
+    margin: 0 !important;
 }
 
 /* Adjust the icons */
@@ -105,7 +110,8 @@ justify-content: space-around !important;
 }
 /* -moz-appearanc must be none. */
 .menu-iconic-left {
-	-moz-appearance: none !important;
+    -moz-appearance: none !important;
+    margin-right: 6px !important;
 }
 
 menuitem[type="checkbox"] > .menu-iconic-left > .menu-iconic-icon,
@@ -129,6 +135,7 @@ menuitem[type="radio"][checked="false"] > .menu-iconic-left > .menu-iconic-icon 
 menuitem[type="radio"][checked="true"] > .menu-iconic-left > .menu-iconic-icon {
     list-style-image: url(radio_button_checked.svg) !important;
 }
+
 
 /* panel */
 panel[type="arrow"] {
@@ -154,7 +161,8 @@ panel[type="arrow"] {
 }
 /* Private style is added here. */
 .panel-arrowcontent {
-	border: 0 !important;
+    border: 0 !important;
+    background: 0 !important;
 	border-radius: 8px !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.20) !important;
 }
@@ -180,7 +188,7 @@ panelview .toolbarbutton-1,
 	padding: 0 14px !important;
 	border: 0 !important;
     font-size: 12.5px !important;
-    transition: background-color .12s ease-in !important;
+    transition: background-color .08s ease-out !important;
 }
 /* Hover */
 panelview .toolbarbutton-1:hover,
@@ -202,6 +210,7 @@ panelview .toolbarbutton-1:active,
     width: 30px !important;
     min-width: 30px !important;
     border-radius: 8px !important;
+    margin: 0 4px !important;
 }
 /* Adjust subviewbutton-back size and border. */
 .subviewbutton-back {

@@ -29,9 +29,6 @@ to use margin of .tabbrowser-tab but not width of
     or the tab could not be closed correctly.
     */
     font-size: 12.5px !important;
-    /* transition */
-    transition:
-    font-size .15s ease-in !important;
 }
 
 
@@ -43,14 +40,24 @@ to use margin of .tabbrowser-tab but not width of
 .tabbrowser-tab[visuallyselected] {
     /** The shadow of selected tab. */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3) !important;
-    font-size: 13px !important;
-    font-weight: 600;
+    
 }
 
 /* The content of a tab */
 
 .tab-label-container {
-	transform: translateY(1px) !important;
+    transform: translateY(1px) !important;
+    /* transition */
+    transition:
+    transform .15s ease-in !important;
+    display: block !important;
+    min-width: 0 !important;
+}
+
+.tabbrowser-tab[visuallyselected] .tab-label-container {
+    /* font-size: 13px !important; */
+    font-weight: 600 !important;
+    transform: scale(1.03) translate(1.6px, 1px)!important;
 }
 
 .tabbrowser-tab::before,
@@ -59,10 +66,16 @@ to use margin of .tabbrowser-tab but not width of
 	display: none !important;
 }
 
-.tab-background {
-   transition: background-color .18s ease-in !important;
+.tabbrowser-tab:not([visuallyselected]) .tab-background {
+    background-color: var(--hover-shadow) !important;
+    opacity: 0 !important;
+   transition: opacity .18s ease-in !important;
+}
+
+.tabbrowser-tab:not([visuallyselected]):hover .tab-background {
+    opacity: 1 !important;
 }
 
 #tabbrowser-tabs[overflow] .tabbrowser-tab[pinned] + .tabbrowser-tab:not([pinned]) .tab-content::before {
-    background-color: var(--hover-shadow) !important;
+    background: 0 !important;
 }

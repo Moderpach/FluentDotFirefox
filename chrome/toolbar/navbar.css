@@ -1,7 +1,7 @@
 /* Change navbar style */
 #nav-bar {
 	/* Set an shadow from the navbar to tabsbar */
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1)  !important;
+    box-shadow: 0 -8px 6px rgba(0, 0, 0, 0.02)  !important;
     /* Shorter navbar */
     max-height: 36px !important;
     /* Here should be visible if nav-bar's content
@@ -36,22 +36,26 @@
     background-color: var(--action-shadow) !important;
 }
 
-#navigator-toolbox .toolbarbutton-1 > .toolbarbutton-icon,
+#navigator-toolbox .toolbarbutton-1 > :-moz-any(.toolbarbutton-icon, .toolbarbutton-badge-stack),
 .scrollbutton-up > .toolbarbutton-icon,
 .scrollbutton-down > .toolbarbutton-icon {
+    background: 0 !important;
     border-radius: 8px !important;
-    transition: background-color .12s ease-in !important;
+    transition: background-color .08s ease-out !important;
 }
 
-#navigator-toolbox .toolbarbutton-1:hover > .toolbarbutton-icon,
+#navigator-toolbox .toolbarbutton-1:hover > :-moz-any(.toolbarbutton-icon, .toolbarbutton-badge-stack),
 .scrollbutton-up:not([disabled]):hover > .toolbarbutton-icon,
 .scrollbutton-down:not([disabled]):hover > .toolbarbutton-icon {
     background-color: var(--hover-shadow) !important;
 }
 
-#navigator-toolbox .toolbarbutton-1:active > .toolbarbutton-icon,
+#navigator-toolbox .toolbarbutton-1:active > :-moz-any(.toolbarbutton-icon, .toolbarbutton-badge-stack),
 .scrollbutton-up:not([disabled]):active > .toolbarbutton-icon,
 .scrollbutton-down:not([disabled]):active > .toolbarbutton-icon {
     background-color: var(--action-shadow) !important;
 }
 
+#navigator-toolbox .toolbarbutton-1[open] > :-moz-any(.toolbarbutton-icon, .toolbarbutton-badge-stack) {
+    background-color: var(--action-shadow) !important;
+}
