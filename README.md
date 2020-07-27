@@ -44,7 +44,7 @@ You can donate by Wechat:
 
 6. Copy 'chrome' folder in FluentDotFirefox to the location.
 
-7. Install fonts in 'fonts' folder of FluentDotFirefox.
+7. Download and install fonts [Sarasa-Gothic](https://github.com/be5invis/Sarasa-Gothic/releases/download/v0.12.11/sarasa-gothic-ttc-0.12.11.7z). 
 
 8. Change your Firefox theme to "Light".
 

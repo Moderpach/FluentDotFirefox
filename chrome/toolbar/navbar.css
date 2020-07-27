@@ -56,6 +56,6 @@
     background-color: var(--action-shadow) !important;
 }
 
-#navigator-toolbox .toolbarbutton-1[open] > :-moz-any(.toolbarbutton-icon, .toolbarbutton-badge-stack) {
+#navigator-toolbox .toolbarbutton-1:-moz-any([open],[check]) > :-moz-any(.toolbarbutton-icon, .toolbarbutton-badge-stack) {
     background-color: var(--action-shadow) !important;
 }

@@ -54,6 +54,12 @@
     * Color of the text on urlbar
     */
     --lwt-toolbar-field-color: #292929 !important;
+	
+	/**** AAutocmplete highlight color */
+    --autocomplete-popup-highlight-color: #000000 !important;
+    
+    /**** Autocmplete highlight background */
+	--autocomplete-popup-highlight-background: #00000012 !important;
     
     /** Private key */
     /**** Urlbar background color */
@@ -79,7 +85,6 @@
     */
     /* Sarasa Gothic */
     --chrome-font-family: 
-    'Noto Sans', 
     'Sarasa UI SC',
     'Sarasa UI TC', 'Sarasa UI HC', 
     'Sarasa UI J', 'Sarasa UI K', 

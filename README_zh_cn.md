@@ -42,7 +42,7 @@ FluentDotFirefox 基于火狐浏览器的用户界面功能。得益于其强大
 
 6. 将 FluentDotFirefox 中的chrome文件夹复制到该目录。
 
-7. 安装 FluentDotFirefox 中fonts文件夹下的所有字体。
+7. 下载并安装字体 [Sarasa-Gothic](https://github.com/be5invis/Sarasa-Gothic/releases/download/v0.12.11/sarasa-gothic-ttc-0.12.11.7z) 。
 
 8. 将您的火狐浏览器主题更改为明亮。
 
