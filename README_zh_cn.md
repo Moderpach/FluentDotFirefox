@@ -2,6 +2,8 @@
 
 中文 | [English](README.md)
 
+**如果您在使用过程中遇到bug，请在issue报告。非常抱歉我在审查bug时可能有所疏漏。**
+
 FluentDotFirefox 是火狐浏览器电脑版的自定义用户界面，致力于让您的火狐浏览器界面现代化。FluentDotFirefox 结合了Fluent Design和Firefox Dot Design以在将其与现代设计元素时保留火狐浏览器的特色。
 
 样例:

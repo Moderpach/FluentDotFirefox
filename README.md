@@ -2,6 +2,8 @@
 
 [中文](README_zh_cn.md) | English
 
+**If you find a bug, I feel so sorry and please report the bug to issue.**
+
 FluentDotFirefox is a userChrome of firefox for PC. It devotes into modernizing firefox's chrome. And, It combines the Windows Fluent Design and the Firefox Dot Design.
 
 Example:
