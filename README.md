@@ -1,5 +1,7 @@
 # FluentDotFirefox
 
+**Firefox Nightly is testing new ui and ux. You can got to https://www.mozilla.org/zh-CN/firefox/channel/desktop/#nightly to get the latest build.**
+
 [中文](README_zh_cn.md) | English
 
 **If you find a bug, I feel so sorry and please report the bug to issue.**
