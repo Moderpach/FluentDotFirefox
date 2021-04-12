@@ -1,5 +1,7 @@
 # FluentDotFirefox
 
+**Firefox Nightly 正在测试新的UI，可以前往 https://www.mozilla.org/zh-CN/firefox/channel/desktop/#nightly 下载尝试**
+
 中文 | [English](README.md)
 
 **如果您在使用过程中遇到bug，请在issue报告。非常抱歉我在审查bug时可能有所疏漏。**
